@@ -8,14 +8,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .cat-container {
+            position: relative;
+            margin: 2rem 0;
+        }
+        
+        .cat-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            white-space: nowrap;
+        }
+        
+        .cat-image:hover + .cat-message {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <img src="images/cute_cat.jpg" alt="Cute Cat" class="cat-image">
-        <h1>A Special Note for You 💖</h1>
-        <p>My love, you bring so much joy into my life. Every day with you is a gift, and I am endlessly grateful for your love. I hope your birthday is as wonderful as you are! 🥰</p>
+        <h1>Surprise! 🐱</h1>
+        <div class="cat-container">
+            <img src="https://placekitten.com/500/500" alt="Cute Cat" class="cat-image">
+            <p class="cat-message">Meow! Happy Birthday! 🎂</p>
+        </div>
+        <p>Here's a cute kitty to brighten your day! 😺</p>
         <div class="buttons">
-            <a href="index.html" class="btn">Back to Home 🏠</a>
+            <a href="index.html" class="btn">✨ Back to Home ✨</a>
         </div>
     </div>
 </body>
