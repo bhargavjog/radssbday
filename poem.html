@@ -11,26 +11,40 @@
 </head>
 <body>
     <div class="container">
-        <h1>An attempt at a poem</h1>
-        <p class="poem">
-            Roses are red, violets are blue,<br>
-            My world seems brighter, all thanks to of you <br>
-            Your smile, your laughter, your beautiful heart,<br>
-            I cherish you deeply, never to part <br>
-            <br>
-            Just three months ago, our paths aligned <br>
-            A spark was lit, so warm, so kind <br>
-            Though miles apart on your special day, <br>
-            I wish I'd be with you — never away <br>
-            <br>
-            Tomorrow I’ll see you, hold you near, <br>
-            Whisper sweet words, just in you to hear <br>
-            On your birthday, I send my love your way,<br>
-            Wishing you happiness, today and always! 🎂🥰##
-        </p>
+        <h1 class="poem-title">A Poem for You ❤️</h1>
+        <div class="poem-container">
+            <div class="poem">
+                <div class="stanza">
+                    <span class="poem-line">Roses are red, violets are blue, ✿</span>
+                    <span class="poem-line">My world seems brighter, all thanks to of you ✧</span>
+                    <span class="poem-line">Your smile, your laughter, your beautiful heart, ❀</span>
+                    <span class="poem-line">I cherish you deeply, never to part ✿</span>
+                </div>
+                
+                <div class="stanza">
+                    <span class="poem-line">Just three months ago, our paths aligned ✧</span>
+                    <span class="poem-line">A spark was lit, so warm, so kind ❀</span>
+                    <span class="poem-line">Though miles apart on your special day, ✿</span>
+                    <span class="poem-line">I wish I'd be with you — never away ✧</span>
+                </div>
+                
+                <div class="stanza">
+                    <span class="poem-line">Tomorrow I'll see you, hold you near, ❀</span>
+                    <span class="poem-line">Whisper sweet words, just in you to hear ✿</span>
+                    <span class="poem-line">On your birthday, I send my love your way, ✧</span>
+                    <span class="poem-line">Wishing you happiness, today and always! ❀</span>
+                </div>
+            </div>
+        </div>
         <div class="buttons">
-            <a href="index.html" class="btn">Back to Home 🏠</a>
+            <a href="index.html" class="btn">✨ Back to Home ✨</a>
         </div>
     </div>
+    <script>
+        // Add staggered animation to poem lines
+        document.querySelectorAll('.poem-line').forEach((line, index) => {
+            line.style.animationDelay = `${index * 0.2}s`;
+        });
+    </script>
 </body>
 </html>
