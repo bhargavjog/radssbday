@@ -391,3 +391,44 @@ p {
     0%, 100% { opacity: 0.3; }
     50% { opacity: 1; }
 }
+
+/* Add corner cakes */
+.corner-cake {
+    position: absolute;
+    font-size: 2rem;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    animation: float 6s ease-in-out infinite;
+    z-index: 1;
+}
+
+.corner-cake:nth-child(1) {
+    top: 1.5rem;
+    left: 1.5rem;
+    animation-delay: 0s;
+}
+
+.corner-cake:nth-child(2) {
+    top: 1.5rem;
+    right: 1.5rem;
+    animation-delay: 1.5s;
+}
+
+.corner-cake:nth-child(3) {
+    bottom: 1.5rem;
+    left: 1.5rem;
+    animation-delay: 3s;
+}
+
+.corner-cake:nth-child(4) {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    animation-delay: 4.5s;
+}
+
+.corner-cake:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+}

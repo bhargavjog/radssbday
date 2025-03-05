@@ -11,8 +11,8 @@
     <style>
         .cat-gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
             margin: 2.5rem 0;
             padding: 1rem;
         }
@@ -26,6 +26,7 @@
             border: 2px solid rgba(255, 255, 255, 0.1);
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(5px);
+            aspect-ratio: 1;
         }
         
         .cat-card:hover {
@@ -34,15 +35,15 @@
             border-color: rgba(255, 255, 255, 0.2);
         }
         
-        .cat-gif {
+        .cat-image {
             width: 100%;
-            height: 200px;
+            height: 100%;
             object-fit: cover;
             border-radius: 18px;
             transition: transform 0.4s ease;
         }
         
-        .cat-card:hover .cat-gif {
+        .cat-card:hover .cat-image {
             transform: scale(1.05);
         }
         
@@ -73,12 +74,8 @@
 
         @media (max-width: 768px) {
             .cat-gallery {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-                gap: 1rem;
-            }
-            
-            .cat-gif {
-                height: 150px;
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
             }
         }
     </style>
@@ -86,22 +83,22 @@
 <body>
     <div class="container">
         <h1>Surprise! 🐱</h1>
-        <p> Some cuties to get you started with your birthday </p>
+        <p>Here's a collection of cute kitties to brighten your day! 😺</p>
         <div class="cat-gallery">
             <div class="cat-card">
-                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2FwOG15dGVucjVudTR4azFvbmM0NzVraW5wa3FxaXZuM3BzdmV3ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BLCHvwl9C5j1u/giphy.gif" alt="Cute" class="cat-gif">
-                <div class="cat-message">Let's dance! 💃</div>
+                <img src="images/v82wta66q5971.jpg" alt="Cute Cat 1" class="cat-image">
+                <div class="cat-message">Sending love! 💝</div>
             </div>
             <div class="cat-card">
-                <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTdqZnhtMHhuNzZoaXNsMjhpOXZiMzZpcG5oOGJvM2s1anF5a3BpbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/z8lO8vYWxfH0ffp3NT/giphy.gif" alt="Happy Cat" class="cat-gif">
+                <img src="images/images.jpg" alt="Cute Cat 2" class="cat-image">
                 <div class="cat-message">Happy Birthday! 🎂</div>
             </div>
             <div class="cat-card">
-                <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" alt="Cute Cat" class="cat-gif">
-                <div class="cat-message">Sending hugs! 🤗</div>
+                <img src="images/4_Image.jpg" alt="Cute Cat 3" class="cat-image">
+                <div class="cat-message">Hugs and kisses! 🤗</div>
             </div>
             <div class="cat-card">
-                <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" alt="Funny Cat" class="cat-gif">
+                <img src="images/0_A7MUqyCLvZDcHkfM.jpg" alt="Cute Cat 4" class="cat-image">
                 <div class="cat-message">Party time! 🎉</div>
             </div>
         </div>
