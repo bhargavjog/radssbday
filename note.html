@@ -6,12 +6,13 @@
     <title>A Special Note</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
         .cat-container {
             position: relative;
-            margin: 2rem 0;
+            margin: 2.5rem 0;
+            padding: 1rem;
         }
         
         .cat-message {
@@ -19,16 +20,23 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, 0.7);
-            padding: 1rem 2rem;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1.2rem 2.5rem;
             border-radius: 50px;
             opacity: 0;
-            transition: opacity 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             white-space: nowrap;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
         }
         
         .cat-image:hover + .cat-message {
             opacity: 1;
+            transform: translate(-50%, -50%) translateY(-5px);
         }
     </style>
 </head>
